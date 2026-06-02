@@ -28,8 +28,10 @@ export default async function handler(req, res) {
   });
 
   try {
+    await transporter.verify();
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
+       replyTo: email,
       to: "info@credencelighting.com",
       subject: "New Website Inquiry",
       html: `

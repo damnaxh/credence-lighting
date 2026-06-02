@@ -49,29 +49,29 @@ export default function Footer() {
 
             <div className="space-y-5 text-white/60">
 
-              <a href="#home" className="block hover:text-white transition duration-300 touch-glow">
+              <Link to="/" className="block hover:text-white transition duration-300 touch-glow">
                 Home
-              </a>
+              </Link>
 
-              <a href="#about" className="block hover:text-white transition duration-300 touch-glow">
+              <Link to="/#about" className="block hover:text-white transition duration-300 touch-glow">
                 About
-              </a>
+              </Link>
 
-              <a href="#products" className="block hover:text-white transition duration-300 touch-glow">
+              <Link to="/#products" className="block hover:text-white transition duration-300 touch-glow">
                 Products
-              </a>
+              </Link>
 
-              <a href="/downloads" className="block hover:text-white transition duration-300 touch-glow">
+              <Link to="/downloads" className="block hover:text-white transition duration-300 touch-glow">
                 Downloads
-              </a>
+              </Link>
 
-              <a href="#projects" className="block hover:text-white transition duration-300 touch-glow">
+              <Link to="/#projects" className="block hover:text-white transition duration-300 touch-glow">
                 Projects
-              </a>
+              </Link>
 
-              <a href="#contact" className="block hover:text-white transition duration-300 touch-glow">
+              <Link to="/#contact" className="block hover:text-white transition duration-300 touch-glow">
                 Contact
-              </a>
+              </Link>
 
             </div>
 
@@ -174,29 +174,31 @@ export default function Footer() {
     </svg>
   </motion.a>
 
-  <motion.a
+  <motion.div
     whileHover={{ y: -3 }}
-    href="/gallery"
     className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:border-[#c8a96b] hover:text-[#c8a96b] transition duration-300"
   >
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <path d="M3 9h18" />
-      <path d="M9 21V9" />
-    </svg>
-  </motion.a>
+    <Link to="/gallery" className="w-full h-full flex items-center justify-center">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="2" />
+        <path d="M3 9h18" />
+        <path d="M9 21V9" />
+      </svg>
+    </Link>
+  </motion.div>
 
-  <motion.a
+  <motion.div
     whileHover={{ y: -3 }}
-    href="/downloads"
     className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center hover:border-[#c8a96b] hover:text-[#c8a96b] transition duration-300"
   >
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 4h16v16H4z" />
-      <path d="M8 12l4 4 4-4" />
-      <path d="M12 8v8" />
-    </svg>
-  </motion.a>
+    <Link to="/downloads" className="w-full h-full flex items-center justify-center">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 4h16v16H4z" />
+        <path d="M8 12l4 4 4-4" />
+        <path d="M12 8v8" />
+      </svg>
+    </Link>
+  </motion.div>
 
 </div>
 
